@@ -1,0 +1,49 @@
+# simple-programming-by-matlab
+郑碧波翻译
+c = 1 + 2*i
+
+c =
+
+   1.0000 + 2.0000i
+
+>> conj(c)
+
+ans =
+
+   1.0000 - 2.0000i
+
+>> real(c)
+
+ans =
+
+     1
+
+>> imag(c)
+
+ans =
+
+     2
+
+>> isreal(c)
+
+ans =
+
+     0
+
+>> abs(c)
+
+ans =
+
+    2.2361
+
+>> angle(c)
+
+ans =
+
+    1.1071
+
+>> atan2(imag(c),real(c))
+
+ans =
+
+    1.1071
