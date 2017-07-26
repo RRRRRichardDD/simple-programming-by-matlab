@@ -1,0 +1,42 @@
+ str1 = 'hello';
+>> str2 = 'Hello';
+>> str3 = 'help';
+>> c = strcmp(str1,str2)
+
+c =
+
+     0
+
+>> d = strcmpi(str1,str2)
+
+d =
+
+     1
+
+>> %strcmp 判断两字符串是否等价
+>> %strcmpi 忽略大小后 判断两字符串是否等价
+>> 
+>> e = strncmp(str1,str3,2)
+
+e =
+
+     1
+
+>> f = strncmpi(str1,str3,2)
+
+f =
+
+     1
+
+>> g = strncmp(str1,str2,3)
+
+g =
+
+     0
+
+>> i = strncmp(str1,str2,2)
+
+i =
+
+     0
+%strncmp 比较前n个字母是否相同
