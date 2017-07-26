@@ -1,0 +1,14 @@
+>> result = strcat('string1','string2')
+
+result =
+
+string1string2
+
+>> result = strvcat('Longstring1   ','String2')
+
+result =
+
+Longstring1   
+String2       
+
+>> %strvcat用于垂直连接两个字符串，并转化为二维字符数组
