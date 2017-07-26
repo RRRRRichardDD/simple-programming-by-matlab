@@ -1,0 +1,55 @@
+ 
+>> %我们可以创建二维字符数组，但一个数组中每一行的长度都必须相等。如果其中的一行
+%比其他行短，那么这个字符数据将会无效，并产生一个错误。例如，下面的语句是非法的，
+%因为他两行的长度不同。
+>> name = ['Stephen J.Chapman';'Senior Engineer')
+ name = ['Stephen J.Chapman';'Senior Engineer')
+                                              |
+Error: Unbalanced or unexpected parenthesis or bracket.
+ 
+>> name = ['Stephen J.Chapman';'Senior Engineer']
+Error using vertcat
+Dimensions of matrices being concatenated are not consistent.
+ 
+>> name = char['Stephen J.Chapman','Senior Engineer']
+ name = char['Stephen J.Chapman','Senior Engineer']
+            |
+Error: Unbalanced or unexpected parenthesis or bracket.
+ 
+>> name = char('Stephen J.Chapman','Senior Engineer')
+
+name =
+
+Stephen J.Chapman
+Senior Engineer  
+
+>> %创建二维字符数组的最简单的方法是用CHAR函数，函数将会自动寻找所有字符串中间最长的那个
+>> 
+>> 
+>> 
+>> line2 = name(2,:)
+
+line2 =
+
+Senior Engineer  
+
+>> line2_trim = deblank(name(2,:))
+
+line2_trim =
+
+Senior Engineer
+
+>> %我们可以用deblank去除掉多余的空格
+>> size(line2)
+
+ans =
+
+     1    17
+
+>> size(line2_trim)
+
+ans =
+
+     1    15
+
+>> 
