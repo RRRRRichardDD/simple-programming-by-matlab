@@ -1,0 +1,24 @@
+ a = 'fate';
+>> b = 'cake';
+>> result = a==b
+
+result =
+
+     0     1     0     1
+% 判断字符是否相等
+
+>> mystring = 'Room23a';
+>> a = isletter(mystring)
+
+a =
+
+     1     1     1     1     0     0     1
+
+>> b = isspace(mystring)
+
+b =
+
+     0     0     0     0     0     0     0
+
+>> %isletter 检查是否是字母
+>> %isspace  检查是否是 空格/tab/换行符
