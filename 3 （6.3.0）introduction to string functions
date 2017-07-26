@@ -1,0 +1,11 @@
+>> str = 'This is a test';
+>> whos
+  Name      Size            Bytes  Class    Attributes
+
+  str       1x14               28  char               
+
+>> ischar(str)
+
+ans =
+
+     1
