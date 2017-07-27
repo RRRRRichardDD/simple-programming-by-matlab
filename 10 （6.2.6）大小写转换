@@ -1,0 +1,15 @@
+>> result = upper('This is test 1!')
+
+result =
+
+THIS IS TEST 1!
+
+>> result = lower('This is test 1!')
+
+result =
+
+this is test 1!
+
+>> %upper--全部转成大写
+>> %lower--全部转成小写
+>> %大小写转换时，数字符号不受影响
