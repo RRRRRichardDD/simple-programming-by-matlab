@@ -1,0 +1,29 @@
+ %eval--将数字组成的字符串转换成数字
+>> a = '3.141592';
+>> b = eval(a)
+
+b =
+
+    3.1416
+
+>> whos
+  Name      Size            Bytes  Class     Attributes
+
+  a         1x8                16  char                
+  b         1x1                 8  double              
+
+>> 
+>> value1 = sscanf('3.141593','%g')
+
+value1 =
+
+    3.1416
+
+>> value2 = sscanf('3.131593','%d')
+
+value2 =
+
+     3
+
+>> %value = sscanf(string,format)
+>> 
