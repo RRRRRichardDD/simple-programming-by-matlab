@@ -1,0 +1,49 @@
+test = 'i am coming now';
+>> position = findstr(test,'i')
+
+position =
+
+     1     9
+
+>> %函数findstr返回短字符串在长字符串中所有的开始位置
+>> 
+>> 
+>> 
+>> array = strvcat('maxarray','min value','max value')
+
+array =
+
+maxarray 
+min value
+max value
+
+>> result = strmatch('max',array)
+
+result =
+
+     1
+     3
+
+>> 
+
+>> %返回那些以指定字符序列开头的行号
+>> 
+>> result = strrep(test,'test','pest')
+
+result =
+
+i am coming now
+
+>> >> [token,remainder] = strtok('this is a test')
+
+token =
+
+this
+
+
+remainder =
+
+ is a test
+
+>> %token代表输入字符串中第一次出现在分隔符前面的所有字符
+>> %remainder代表这一行的其余部分
