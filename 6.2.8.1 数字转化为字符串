@@ -1,0 +1,35 @@
+>> x = 5317;
+>> y = int2str(x)
+
+y =
+
+5317
+
+>> whos
+  Name      Size            Bytes  Class     Attributes
+
+  x         1x1                 8  double              
+  y         1x4                 8  char                
+
+>> 
+>> 
+>> p = num2str(pi,7)
+
+p =
+
+3.141593
+
+>> p = num2str(pi,'%10.5e')
+
+p =
+
+3.14159e+00
+
+>> whos
+  Name      Size            Bytes  Class     Attributes
+
+  p         1x11               22  char                
+  x         1x1                 8  double              
+  y         1x4                 8  char                
+
+>> % string = num2str(number,format)
