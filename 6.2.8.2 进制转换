@@ -1,0 +1,40 @@
+>> %二进制 binary system
+>> %十进制 decimal system
+>> %十六进制 hexadecimal system
+>> 
+>> hex2dec('21AF')
+
+ans =
+
+        8623
+
+>> dec2hex(8623)
+
+ans =
+
+21AF
+
+>> dec2hex('8623')
+
+ans =
+
+38
+36
+32
+33
+
+>> 
+>> dec2bin(20)
+
+ans =
+
+10100
+
+>> bin2dec('10100')
+
+ans =
+
+    20
+
+>> % matlab 只有
+>> % hex2dec dec2hex dec2bin bin2dec 这四种
