@@ -1,0 +1,20 @@
+>> [x y] = meshgrid(-4:0.2:4,-4:0.2:4);
+>> z = exp(-0.5*(x.^2 + y.^2));
+>> mesh(x,y,z)
+>> 
+>> %notes
+>> %meshgrid 用来快速创建二维数组
+>> %
+>> 
+>> %[x y] = meshgrid(xstart:xinc:xend,ystart:yinc:yend);
+>> %mesh 创建三维网状
+>> whos
+  Name       Size            Bytes  Class     Attributes
+
+  x         41x41            13448  double              
+  y         41x41            13448  double              
+  z         41x41            13448  double              
+
+>> % x,y,z 一般为大小相同的三个矩阵
+
+>> %类似用法 surf(x,y,z) contour(x,y,z)
