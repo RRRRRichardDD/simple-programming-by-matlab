@@ -1,0 +1,12 @@
+%编写一个程序，从用户接受一个字符串，并确定用户指定的字母出现在字符串多少次
+% input1:a string
+% input2:a letter chosen
+% output:the number that the letter shows
+a = input('please enter the string');%最初的字符串
+b = input('please enter the letter');
+c = size(a);
+num = c(2);
+d = repmat(b,1,num);%输入字母的重复字符串
+result = a==d;
+ans = sum(result);
+disp(ans);
