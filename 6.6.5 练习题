@@ -1,0 +1,10 @@
+%输入：随便一个复数
+%输出：笛卡尔坐标系中圆圈相应的点  原点指向改点的向量
+
+c = input('please enter the complex c');
+a = real(c)
+b = imag(c)
+scatter(a,b,'o');
+hold on
+u = 0; v =0;
+quiver(u,v,a,b);
