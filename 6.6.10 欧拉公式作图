@@ -1,0 +1,17 @@
+%欧拉公式 ： exp(i*s） = cos(s) +i*sin（s);
+
+
+%二维 i 已经知道啦
+
+% input: an value of i
+% output: the graph of oula 
+i = input('please enter the value of i');
+syms s
+ezplot('exp(s) -cos(s) -sin(s)',[0 2*pi]);
+
+
+% 三维 i 还没有知道
+
+syms s
+syms i
+ezplot3('i','s','exp(i*s) - cos(s) - i*sin(s)');
