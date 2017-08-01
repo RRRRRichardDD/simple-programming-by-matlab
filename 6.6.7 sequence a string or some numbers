@@ -1,0 +1,17 @@
+% input: a string
+% output: the sequenced string
+
+a = input('please enter the string');
+n = length(a);
+
+
+for j = 1:n-1
+    for i = 1:n-1
+        if a(i)>a(i+1)
+            c = a(i);
+            a(i) = a(i+1);
+            a(i+1) = c;
+        end
+    end
+end
+disp(a);
