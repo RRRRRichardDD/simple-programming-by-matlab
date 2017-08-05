@@ -1,0 +1,54 @@
+>> %字符串单元序列
+>> cellstring{1} = 'Stephen J.Chapman';
+>> cellstring{2} = 'Male';
+>> cellstring{3} = 'SSN 999-99-9999';
+>> cellstring
+
+cellstring = 
+
+    'Stephen J.Chapman'    'Male'    'SSN 999-99-9999'
+
+>> whos
+  Name            Size            Bytes  Class    Attributes
+
+  cellstring      1x3               408  cell               
+
+>> 
+>> data = ['Line1     ';'Additional Line']
+Error using vertcat
+Dimensions of matrices being concatenated are not consistent.
+ 
+>> data = ['Line1';'12345']
+
+data =
+
+Line1
+12345
+
+>> c = cellstr(data)
+
+c = 
+
+    'Line1'
+    '12345'
+
+>> whos data c
+  Name      Size            Bytes  Class    Attributes
+
+  c         2x1               244  cell               
+  data      2x5                20  char               
+
+>> % cellstr 将 chat 转换成了cell
+>> 
+>> % 再转换回去
+>> newdata = char(c)
+
+newdata =
+
+Line1
+12345
+
+>> whos newdata
+  Name         Size            Bytes  Class    Attributes
+
+  newdata      2x5                20  char               
