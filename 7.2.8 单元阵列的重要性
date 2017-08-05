@@ -1,0 +1,79 @@
+%一种特别的输入参数 varargin 可以在自定义函数中得到
+% 这种函数支持输入参数的变量的个数
+%这个参数显示在输入参数列表的最后一项
+% 它返回一个单元阵列
+% 所以一个输入实参可以包括任意数目的实参
+
+
+function test1(varargin)
+disp(['There are ' int2str(nargin) ' argunments.']);
+disp('The input arguments are:');
+disp(varargin);
+
+
+>> test1
+There are 0 argunments.
+The input arguments are:
+>> 
+>> test1(6)
+There are 1 argunments.
+The input arguments are:
+    [6]
+
+>> whos
+>> 
+>> 
+>> test1(1,'test 1',[1 2;3 4]
+ test1(1,'test 1',[1 2;3 4]
+                           |
+Error: Expression or statement is incorrect--possibly
+unbalanced (, {, or [.
+ 
+>> test1(1,'test 1',[1 2;3 4])
+There are 3 argunments.
+The input arguments are:
+    [1]    'test 1'    [2x2 double]
+
+>> test1(1,23;[1 2; 3 4],'this')
+ test1(1,23;[1 2; 3 4],'this')
+           |
+Error: Unbalanced or unexpected parenthesis or
+bracket.
+ 
+>> test1(1, 23 ; [ 1 2; 3 4], 'this')
+ test1(1, 23 ; [ 1 2; 3 4], 'this')
+             |
+Error: Unbalanced or unexpected parenthesis or bracket.
+ 
+>> test1(1,2;3,4)
+ test1(1,2;3,4)
+          |
+Error: Unbalanced or unexpected parenthesis or bracket.
+
+
+
+
+
+
+function plotline(varargin)
+%Plotline plot points specified by [x,y] pairs
+% Function Plotline accepts an arbitrary number of
+% [x,y] points and plots a line connecting them
+% In addition, it can accept a line specification
+% string, and pass that string on to function plot
+% Define variables:
+% ii  --index variable
+% jj  --index variable
+% linespec --String defining plot characteristics
+% msg      --error message
+% varargin --cell array containging input arguments
+% x        -- x values to plot
+% y        -- y values to plot
+
+% Record of revisions 
+
+
+% Check for a legal number of input arguments 
+% We need at least 2 points to plot a line...
+msg = nargchk(2,Inf,nargin)
+ 
