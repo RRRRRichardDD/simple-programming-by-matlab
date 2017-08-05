@@ -1,0 +1,77 @@
+>>用赋值语句创建函数
+>> student.name = 'John Doe';
+>> student.addr1 = '123 Main Street';
+>> student.city = 'Anytown';
+>> student.zip = '71211';
+>> student
+
+student = 
+
+     name: 'John Doe'
+    addr1: '123 Main Street'
+     city: 'Anytown'
+      zip: '71211'
+
+>> whos student
+  Name         Size            Bytes  Class     Attributes
+
+  student      1x1               774  struct      
+  
+ 
+ %用赋值语句将student这个struct 扩大
+  >> student(2).name = 'Jane Q.Public'
+
+student = 
+
+1x2 struct array with fields:
+
+    name
+    addr1
+    city
+    zip
+
+>> student(1)
+
+ans = 
+
+     name: 'John Doe'
+    addr1: '123 Main Street'
+     city: 'Anytown'
+      zip: '71211'
+
+>> student(2)
+
+ans = 
+
+     name: 'Jane Q.Public'
+    addr1: []
+     city: []
+      zip: []
+
+>> whos
+  Name         Size            Bytes  Class     Attributes
+
+  ans          1x1               418  struct              
+  student      1x2               936  struct              
+
+>> % student 现在是一个1*2的数据
+>> 
+>> name
+Undefined function or variable 'name'.
+ 
+ 
+ % name addr1 之类的为名字 ans结果为域 通过域的名字来访问域
+>> student.name
+
+ans =
+
+John Doe
+
+
+ans =
+
+Jane Q.Public
+
+>> 
+
+
