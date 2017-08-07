@@ -75,5 +75,7 @@ function plotline(varargin)
 
 % Check for a legal number of input arguments 
 % We need at least 2 points to plot a line...
-msg = nargchk(2,Inf,nargin)
+msg = nargchk(2,Inf,nargin);
+error(msg);
+%                              dddddd
  
