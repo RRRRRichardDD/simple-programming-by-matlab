@@ -75,3 +75,55 @@ Jane Q.Public
 >> 
 
 
+
+>> use struct to build a struct
+>> str_array = struct('dajfd',1,'dads',2)
+
+str_array = 
+
+    dajfd: 1
+     dads: 2
+
+>> whos
+  Name           Size            Bytes  Class     Attributes
+
+  str_array      1x1               368  struct              
+
+>> str_array = struct('dajfd','das','das','dd')
+
+str_array = 
+
+    dajfd: 'das'
+      das: 'dd'
+
+>> whos
+  Name           Size            Bytes  Class     Attributes
+
+  str_array      1x1               362  struct              
+  
+  
+  
+>> % 删除结构中的域
+>> student.name = 'John Doe';
+>> student.addr1 = '123 Main Street';
+>> student.city = 'Anytown';
+>> student.zip = '71211';
+>> student
+
+student = 
+
+     name: 'John Doe'
+    addr1: '123 Main Street'
+     city: 'Anytown'
+      zip: '71211'
+
+>> stu2 = rmfield(student,'zip')
+
+stu2 = 
+
+     name: 'John Doe'
+    addr1: '123 Main Street'
+     city: 'Anytown'
+     
+     
+     
