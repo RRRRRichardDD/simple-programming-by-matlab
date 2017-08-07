@@ -1,0 +1,22 @@
+%% two matlab functions are available to make structute arrays easier to use in programs
+% getfield gets the current value stored in a field
+% setfield inserts a new value into a field
+
+
+
+
+%Pre
+>> studentarray(1)= struct('name','John Doe','addr1','123 Main Street','city','Anytown','state','LA','zip','71211','exams',[80 95 84]);
+>> studentarray(2) =  struct('name','Jane Q.Public','addr1','P.O.BOX17','city','Nowhere','state','ms','zip','483878','exams',[11 95 84]);
+>> studentarray(3) = struct('name','haha','addr1','adad','city','dd','state','alaska','zip','432','exams',[22 22 33]);
+
+
+>>% main
+>> zip = getfield(studentarray,{2},'zip')
+>>%% f= getfield(array,{array_index},'field',{field_index}
+
+
+
+zip =
+
+483878
