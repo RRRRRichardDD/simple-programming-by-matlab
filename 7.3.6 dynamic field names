@@ -1,0 +1,20 @@
+>> % a dynamic field name is a string enclosed in parentheses at a location where a field name is expected
+
+
+>> studentarray(1).name
+
+ans =
+
+John Doe
+
+>> % this is static  field name
+
+
+ 
+>> studentarray(1).('name')
+
+ans =
+
+John Doe
+
+>> % this is dynamic field name
