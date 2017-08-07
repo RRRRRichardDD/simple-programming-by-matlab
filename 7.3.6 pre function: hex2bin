@@ -1,0 +1,10 @@
+function hex = bin2hex(bin)
+temp = bin2dec(bin);
+hex = dec2hex(temp);
+
+
+>> bin2hex('11111111111111111')
+
+ans =
+
+1FFFF
