@@ -1,0 +1,10 @@
+%输入目标函数和限制函数
+syms x y l
+a = input('please enter the target function');
+b = input('please enter the constraint function');
+% 计算出拉格朗日函数
+c = a - l*b
+% 对拉格朗日函数求偏微分并解方程组
+sln=solve(diff(c,x)==0,diff(c,y)==0,diff(c,l)==0,b==0)
+% 输出方程组x y l
+disp(sln)
